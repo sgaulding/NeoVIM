@@ -43,10 +43,7 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 require('lspconfig').eslint.setup({
-	single_file_support = false,
-	on_attach = function(client, bufnr)
-		print('hello eslint')
-	end
+	single_file_support = false
 })
 
 lsp.setup()
